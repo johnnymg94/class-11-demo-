@@ -1,5 +1,5 @@
 * {
-  box-sizing: boarder box;
+  box-sizing: border box;
 }
 
 body {
@@ -34,4 +34,50 @@ h1 {
   grid-row-end: 3;
   grid-column-start: 2;
   grid-column-end: 3;
+}
+
+section {
+  background-color: rbga (211, 187, 176, 0.3);
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+section img {
+  width: 460px;
+  max-height: 26rem;
+  border: 5px solid transparent;
+}
+
+section img:hover {
+  border: 5px sold rosybrown;
+  cursor: pointer;
+}
+
+section.no-voting img:hover {
+  border: 5px solid transparent;
+  cursor: none;
+}
+
+ul {
+  margin: 1rem;
+}
+
+li {
+  margin: 0.5rem;
+}
+
+section + div {
+  background-color: darkgray;
+  color: lightgrey;
+  padding: 0.5 1rem;
+  width: max-content;
+  height: max-content;
+  font-size: 0.8rem;
+  margin: 1rem;
 }
